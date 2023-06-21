@@ -1,0 +1,533 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/323039/black-wood-small.jpg");
+    color: $blanco;
+}
+
+a {
+    color: $blanco;
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .container {
+    margin: auto;
+    text-align: center;
+  }
+  
+  /* Nav */
+   .h1 {
+    padding-left: 25px;
+    font-size: 23px;
+    font-family: $Playfair;
+  }
+  .main-nav {
+    border-bottom: $gris_bordes;
+    background-color: $negro;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+  }
+  .main-nav ul {
+    display: flex;
+    margin-right: 15px;
+  }
+  
+  .main-nav ul li {
+    padding: 0 4px;
+  }
+  
+  .main-nav ul li a {
+    padding: 5px 5px;
+  }
+  
+  .main-nav ul li a:hover {
+    border-bottom: 2px solid $blanco;
+  }
+  
+  .main-nav ul.main-menu {
+    font-family: $Bona;
+    font-size:  16px;
+  }
+  
+  .mas button {
+    font-family: $Bona;
+    display: block;
+    border-radius: 12px;
+    border: none;
+    padding: 15px 10px;
+    background: $negro;
+    color: $blanco;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 35px;
+  }
+  
+  .mas button:hover {
+    background-color: $hover_botones;
+    } 
+  
+  
+  /* Mas */
+   .mas {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    margin: 10px 0 10px 0;
+  }
+  .h1-mas {
+    font-family: $Playfair;
+    margin-bottom: 17px;
+    padding-top: 40px;
+  }
+
+  
+  /* Promos */
+   .promos {
+    background-color: $blanco;
+    color: $negro;
+    border: $borde_prod;
+    border-radius: 15px;
+    max-width: 100%;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 40px;
+    padding: 15px 18px 10px 18px;
+  }
+  .h1-destacados { 
+    padding: 30px 0 10px 0;
+    margin-bottom: 17px;
+    font-family: $Playfair;
+  }
+  .promos img {
+    border: $borde_img_prod;
+    border-radius: 9px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .promos h3 {
+    margin-bottom: 4px;
+    font-size: 19px;
+    font-family: $Bona;
+    font-weight: bold;
+  }
+
+  .promos p {
+    font-weight: bold;
+  }
+  
+  .promos button {
+    font-family: $Bona;
+    font-size: 17px;
+    display: block;
+    margin: 15px auto 0px auto;
+    padding: 10px 13px;
+    background-color: $negro;
+    color: $blanco;
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+  }
+  .promos button:hover {
+  background-color: $hover_botones;
+  }  
+  
+   /* Footer Links */
+   .links {
+    margin-top: 120px;
+    border-top: $gris_bordes;
+    background: $negro;
+    color: $blanco;
+    font-size: 16px;
+    padding: 10px 65px 10px 65px;
+  }
+  
+  .links-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+  }
+  
+  .links li {
+    padding: 8px;
+  }  
+  
+  /*Formulario contacto*/
+   form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 3px solid $blanco;
+    border-radius: 10px;
+    font-family: $Playfair;
+  }
+  .form-h1{
+    text-align: center;    
+    font-family: $Playfair;
+    padding: 100px 0 20px 0;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid $blanco;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  input[type="submit"] {
+    background-color: $negro;
+    color: $blanco;
+    padding: 10px 17px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 19px;
+    font-family: $Playfair;
+  } 
+
+  input[type="submit"]:hover {
+    background-color: $hover_botones;
+    } 
+  
+  
+  /* Productos */
+  .h1-productos {
+  text-align: center;
+  margin: 30px 0 20px 0;
+  font-family: $Playfair;
+  padding-top: 60px;
+  }
+  .body-productos {
+  max-width: 100%;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  } 
+  
+  
+  /* Estilos para los productos */
+  
+  .productos {
+  border: $borde_prod;
+  border-radius: 25px;
+  background-color: $blanco;
+  color: $negro;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 40px;
+  padding: 22px 25px;   
+  }
+
+  .cont-productos {
+    border: $borde_img_prod;
+    border-radius: 30px;
+  }
+  
+  .productos img {
+  border-radius: 25px;
+  max-width: 100%;
+  width: 100%;
+  }
+  
+  .productos h3 {
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-family: $Bona;
+    font-weight: bold;
+  }
+  
+  .productos p {
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 3px;
+  }
+  
+  .productos button {
+  font-family: $Bona;
+  font-size: 17px;
+  display: block;
+  margin: 7px auto 8px auto;
+  padding: 9px 12px;
+  background-color: $negro;
+  color: $blanco;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  }
+  .productos button:hover {
+    background-color: $hover_botones;
+  } 
+  
+  // Páginas productos
+
+  // .num-paginas button a {
+  //   justify-content: space-between;
+  // }
+  
+   /* Vinos */
+   .h1-vinos {
+    text-align: center;
+    margin: 30px 0 20px 0;
+    font-family: $Playfair;
+    padding-top: 60px;
+    }
+    .body-vinos {
+    max-width: 100%;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    } 
+    
+    
+    /* Estilos para los vinos */
+    
+    .vinos {
+    border: $borde_prod;
+    border-radius: 25px;
+    background-color: $blanco;
+    color: $negro;
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 40px;
+    padding: 22px 25px;   
+    }
+  
+    .cont-vinos {
+      border: $borde_img_prod;
+      border-radius: 30px;
+    }
+    
+    .vinos img {
+    border-radius: 25px;
+    max-width: 100%;
+    width: 100%;
+    }
+    
+    .vinos h3 {
+      margin-bottom: 4px;
+      font-size: 16px;
+      font-family: $Bona;
+      font-weight: bold;
+    }
+    
+    .vinos p {
+      font-weight: bold;
+      font-size: 17px;
+      margin-top: 3px;
+    }
+    
+    .vinos button {
+    font-family: $Bona;
+    font-size: 17px;
+    display: block;
+    margin: 7px auto 8px auto;
+    padding: 9px 12px;
+    background-color: $negro;
+    color: $blanco;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    }
+    .vinos button:hover {
+      background-color: $hover_botones;
+    } 
+    
+    // Páginas vinos
+  
+    // .num-paginas button a {
+    //   justify-content: space-between;
+    // }
+
+     /* Espumantes */
+     .h1-espumantes {
+      text-align: center;
+      margin: 30px 0 20px 0;
+      font-family: $Playfair;
+      padding-top: 60px;
+      }
+      .body-espumantes {
+      max-width: 100%;
+      width: 90%;
+      margin: auto;
+      text-align: center;
+      } 
+      
+      
+      /* Estilos para los espumantes */
+      
+      .espumantes {
+     border: $borde_prod;
+      border-radius: 25px;
+      background-color: $blanco;
+      color: $negro;
+      max-width: 100%;
+      width: 100%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 30px;
+      margin-bottom: 40px;
+      padding: 22px 25px;   
+      }
+    
+      .cont-espumantes {
+        border: $borde_img_prod;
+        border-radius: 30px;
+      }
+      
+      .espumantes img {
+      border-radius: 25px;
+      max-width: 100%;
+      width: 100%;
+      }
+      
+      .espumantes h3 {
+        margin-bottom: 4px;
+        font-size: 16px;
+        font-family: $Bona;
+        font-weight: bold;
+      }
+      
+      .espumantes p {
+        font-weight: bold;
+        font-size: 17px;
+        margin-top: 3px;
+      }
+      
+      .espumantes button {
+      font-family: $Bona;
+      font-size: 17px;
+      display: block;
+      margin: 7px auto 8px auto;
+      padding: 9px 12px;
+      background-color: $negro;
+      color: $blanco;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      }
+      .espumantes button:hover {
+        background-color: $hover_botones;
+      } 
+      
+      // Páginas espumantes
+    
+      // .num-paginas button a {
+      //   justify-content: space-between;
+      // }
+  
+
+ /* aceites */
+ .h1-aceites {
+  text-align: center;
+  margin: 30px 0 20px 0;
+  font-family: $Playfair;
+  padding-top: 60px;
+  }
+  .body-aceites {
+  max-width: 100%;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  } 
+  
+  
+  /* Estilos para los aceites */
+  
+  .aceites {
+  border: $borde_prod;
+  border-radius: 25px;
+  background-color: $blanco;
+  color: $negro;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 40px;
+  padding: 22px 25px;   
+  }
+
+  .cont-aceites {
+    border: $borde_img_prod;
+    border-radius: 30px;
+  }
+  
+  .aceites img {
+  border-radius: 25px;
+  max-width: 100%;
+  width: 100%;
+  }
+  
+  .aceites h3 {
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-family: $Bona;
+    font-weight: bold;
+  }
+  
+  .aceites p {
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 3px;
+  }
+  
+  .aceites button {
+  font-family: $Bona;
+  font-size: 17px;
+  display: block;
+  margin: 7px auto 8px auto;
+  padding: 9px 12px;
+  background-color: $negro;
+  color: $blanco;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  }
+  .aceites button:hover {
+    background-color: $hover_botones;
+  } 
+  
+  // Páginas aceites
+
+  // .num-paginas button a {
+  //   justify-content: space-between;
+  // }  

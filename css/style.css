@@ -1,0 +1,610 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/323039/black-wood-small.jpg");
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin: auto;
+  text-align: center;
+}
+
+/* Nav */
+.h1 {
+  padding-left: 25px;
+  font-size: 23px;
+  font-family: "Playfair Display", serif;
+}
+
+.main-nav {
+  border-bottom: solid rgba(152, 145, 145, 0.487) 1px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.main-nav ul {
+  display: flex;
+  margin-right: 15px;
+}
+
+.main-nav ul li {
+  padding: 0 4px;
+}
+
+.main-nav ul li a {
+  padding: 5px 5px;
+}
+
+.main-nav ul li a:hover {
+  border-bottom: 2px solid white;
+}
+
+.main-nav ul.main-menu {
+  font-family: "Bona Nova", serif;
+  font-size: 16px;
+}
+
+.mas button {
+  font-family: "Bona Nova", serif;
+  display: block;
+  border-radius: 12px;
+  border: none;
+  padding: 15px 10px;
+  background: black;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  margin-top: 35px;
+}
+
+.mas button:hover {
+  background-color: #171616;
+}
+
+/* Mas */
+.mas {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+  margin: 10px 0 10px 0;
+}
+
+.h1-mas {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 17px;
+  padding-top: 40px;
+}
+
+/* Promos */
+.promos {
+  background-color: white;
+  color: black;
+  border: solid black 4px;
+  border-radius: 15px;
+  max-width: 100%;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 40px;
+  padding: 15px 18px 10px 18px;
+}
+
+.h1-destacados {
+  padding: 30px 0 10px 0;
+  margin-bottom: 17px;
+  font-family: "Playfair Display", serif;
+}
+
+.promos img {
+  border: solid rgb(48, 48, 48) 4px;
+  border-radius: 9px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.promos h3 {
+  margin-bottom: 4px;
+  font-size: 19px;
+  font-family: "Bona Nova", serif;
+  font-weight: bold;
+}
+
+.promos p {
+  font-weight: bold;
+}
+
+.promos button {
+  font-family: "Bona Nova", serif;
+  font-size: 17px;
+  display: block;
+  margin: 15px auto 0px auto;
+  padding: 10px 13px;
+  background-color: black;
+  color: white;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+}
+
+.promos button:hover {
+  background-color: #171616;
+}
+
+/* Footer Links */
+.links {
+  margin-top: 120px;
+  border-top: solid rgba(152, 145, 145, 0.487) 1px;
+  background: black;
+  color: white;
+  font-size: 16px;
+  padding: 10px 65px 10px 65px;
+}
+
+.links-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
+
+.links li {
+  padding: 8px;
+}
+
+/*Formulario contacto*/
+form {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 3px solid white;
+  border-radius: 10px;
+  font-family: "Playfair Display", serif;
+}
+
+.form-h1 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  padding: 100px 0 20px 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type=text],
+input[type=email] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 2px solid white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 10px 17px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 19px;
+  font-family: "Playfair Display", serif;
+}
+
+input[type=submit]:hover {
+  background-color: #171616;
+}
+
+/* Productos */
+.h1-productos {
+  text-align: center;
+  margin: 30px 0 20px 0;
+  font-family: "Playfair Display", serif;
+  padding-top: 60px;
+}
+
+.body-productos {
+  max-width: 100%;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+/* Estilos para los productos */
+.productos {
+  border: solid black 4px;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 40px;
+  padding: 22px 25px;
+}
+
+.cont-productos {
+  border: solid rgb(48, 48, 48) 4px;
+  border-radius: 30px;
+}
+
+.productos img {
+  border-radius: 25px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.productos h3 {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-family: "Bona Nova", serif;
+  font-weight: bold;
+}
+
+.productos p {
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 3px;
+}
+
+.productos button {
+  font-family: "Bona Nova", serif;
+  font-size: 17px;
+  display: block;
+  margin: 7px auto 8px auto;
+  padding: 9px 12px;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.productos button:hover {
+  background-color: #171616;
+}
+
+/* Vinos */
+.h1-vinos {
+  text-align: center;
+  margin: 30px 0 20px 0;
+  font-family: "Playfair Display", serif;
+  padding-top: 60px;
+}
+
+.body-vinos {
+  max-width: 100%;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+/* Estilos para los vinos */
+.vinos {
+  border: solid black 4px;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 40px;
+  padding: 22px 25px;
+}
+
+.cont-vinos {
+  border: solid rgb(48, 48, 48) 4px;
+  border-radius: 30px;
+}
+
+.vinos img {
+  border-radius: 25px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.vinos h3 {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-family: "Bona Nova", serif;
+  font-weight: bold;
+}
+
+.vinos p {
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 3px;
+}
+
+.vinos button {
+  font-family: "Bona Nova", serif;
+  font-size: 17px;
+  display: block;
+  margin: 7px auto 8px auto;
+  padding: 9px 12px;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.vinos button:hover {
+  background-color: #171616;
+}
+
+/* Espumantes */
+.h1-espumantes {
+  text-align: center;
+  margin: 30px 0 20px 0;
+  font-family: "Playfair Display", serif;
+  padding-top: 60px;
+}
+
+.body-espumantes {
+  max-width: 100%;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+/* Estilos para los espumantes */
+.espumantes {
+  border: solid black 4px;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 40px;
+  padding: 22px 25px;
+}
+
+.cont-espumantes {
+  border: solid rgb(48, 48, 48) 4px;
+  border-radius: 30px;
+}
+
+.espumantes img {
+  border-radius: 25px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.espumantes h3 {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-family: "Bona Nova", serif;
+  font-weight: bold;
+}
+
+.espumantes p {
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 3px;
+}
+
+.espumantes button {
+  font-family: "Bona Nova", serif;
+  font-size: 17px;
+  display: block;
+  margin: 7px auto 8px auto;
+  padding: 9px 12px;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.espumantes button:hover {
+  background-color: #171616;
+}
+
+/* aceites */
+.h1-aceites {
+  text-align: center;
+  margin: 30px 0 20px 0;
+  font-family: "Playfair Display", serif;
+  padding-top: 60px;
+}
+
+.body-aceites {
+  max-width: 100%;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+/* Estilos para los aceites */
+.aceites {
+  border: solid black 4px;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 40px;
+  padding: 22px 25px;
+}
+
+.cont-aceites {
+  border: solid rgb(48, 48, 48) 4px;
+  border-radius: 30px;
+}
+
+.aceites img {
+  border-radius: 25px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.aceites h3 {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-family: "Bona Nova", serif;
+  font-weight: bold;
+}
+
+.aceites p {
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 3px;
+}
+
+.aceites button {
+  font-family: "Bona Nova", serif;
+  font-size: 17px;
+  display: block;
+  margin: 7px auto 8px auto;
+  padding: 9px 12px;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.aceites button:hover {
+  background-color: #171616;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+  .h1 {
+    font-size: 8px;
+    padding: 0 4px 0 10px;
+  }
+  .main-nav {
+    display: flex;
+    height: 65px;
+  }
+  .main-nav ul li {
+    padding: 0 0 0 1px;
+  }
+  .main-nav ul li a {
+    font-size: 12px;
+  }
+  .mas {
+    height: auto;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+  }
+  .h1-mas {
+    font-size: 14px;
+    margin: 10px 0 15px 0;
+  }
+  .mas button {
+    margin-top: 26px;
+    font-size: 14px;
+  }
+  .promos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 95%;
+  }
+  .h1-destacados {
+    font-size: 14px;
+    padding: 10px 0 10px 0;
+  }
+  .promos img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .promos h3 {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .promos button {
+    margin: 10px auto 0;
+    padding: 8px 8px;
+    font-size: 14px;
+  }
+  .links {
+    padding: 2px 2px;
+    text-align: center;
+  }
+  .links-footer {
+    margin: 15px 0 10px 0;
+  }
+  .links li {
+    padding: 3px 0 3px 0;
+  }
+  .links ul li h3 {
+    font-size: 11px;
+  }
+  .links ul li p {
+    font-size: 12px;
+  }
+  .links ul li a {
+    font-size: 13px;
+  }
+  form {
+    width: 100%;
+    max-width: 100%;
+    margin: 40px auto 100px auto;
+    padding: 20px;
+  }
+  .aceites {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .espumantes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .vinos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
